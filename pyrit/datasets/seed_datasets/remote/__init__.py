@@ -80,6 +80,12 @@ from pyrit.datasets.seed_datasets.remote.xstest_dataset import (
     _XSTestDataset,
 )  # noqa: F401
 
+# GARAK probe loaders
+from pyrit.datasets.seed_datasets.garak import (  # noqa: F401
+    _GarakApiKeyGetKeyDataset,
+    _GarakApiKeyCompleteKeyDataset,
+)
+
 __all__ = [
     "_RemoteDatasetLoader",
     "_AegisContentSafetyDataset",
@@ -102,4 +108,6 @@ __all__ = [
     "_TDC23RedteamingDataset",
     "_VLSUMultimodalDataset",
     "_XSTestDataset",
+    "_GarakApiKeyGetKeyDataset",
+    "_GarakApiKeyCompleteKeyDataset",
 ]
