@@ -231,3 +231,39 @@ class _GarakApiKeyCompleteKeyDataset(GarakProbeLoader):
         from pyrit.datasets.seed_datasets.garak.probes.apikey import CompleteKey
 
         super().__init__(probe_class=CompleteKey, probe_config=probe_config)
+
+
+class _GarakExploitationJinjaDataset(GarakProbeLoader):
+    """Loader for the GARAK JinjaTemplatePythonInjection probe."""
+
+    should_register = True
+
+    def __init__(self, *, probe_config: Optional[Dict[str, Any]] = None) -> None:
+        """Initialize the loader."""
+        from pyrit.datasets.seed_datasets.garak.probes.exploitation import JinjaTemplatePythonInjection
+
+        super().__init__(probe_class=JinjaTemplatePythonInjection, probe_config=probe_config)
+
+
+class _GarakExploitationSQLiEchoDataset(GarakProbeLoader):
+    """Loader for the GARAK SQLInjectionEcho probe."""
+
+    should_register = True
+
+    def __init__(self, *, probe_config: Optional[Dict[str, Any]] = None) -> None:
+        """Initialize the loader."""
+        from pyrit.datasets.seed_datasets.garak.probes.exploitation import SQLInjectionEcho
+
+        super().__init__(probe_class=SQLInjectionEcho, probe_config=probe_config)
+
+
+class _GarakExploitationSQLiSystemDataset(GarakProbeLoader):
+    """Loader for the GARAK SQLInjectionSystem probe (disabled by default)."""
+
+    should_register = True
+
+    def __init__(self, *, probe_config: Optional[Dict[str, Any]] = None) -> None:
+        """Initialize the loader."""
+        from pyrit.datasets.seed_datasets.garak.probes.exploitation import SQLInjectionSystem
+
+        super().__init__(probe_class=SQLInjectionSystem, probe_config=probe_config)

@@ -36,6 +36,9 @@ from pyrit.datasets.seed_datasets.garak.probe_loader import (
     GarakProbeLoader,
     _GarakApiKeyCompleteKeyDataset,
     _GarakApiKeyGetKeyDataset,
+    _GarakExploitationJinjaDataset,
+    _GarakExploitationSQLiEchoDataset,
+    _GarakExploitationSQLiSystemDataset,
     create_probe_dataset_loaders,
     discover_probe_classes,
 )
@@ -44,6 +47,9 @@ __all__ = [
     "GarakProbeLoader",
     "_GarakApiKeyGetKeyDataset",
     "_GarakApiKeyCompleteKeyDataset",
+    "_GarakExploitationJinjaDataset",
+    "_GarakExploitationSQLiEchoDataset",
+    "_GarakExploitationSQLiSystemDataset",
     "discover_probe_classes",
     "create_probe_dataset_loaders",
 ]

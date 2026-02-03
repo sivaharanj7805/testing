@@ -84,6 +84,9 @@ from pyrit.datasets.seed_datasets.remote.xstest_dataset import (
 from pyrit.datasets.seed_datasets.garak import (  # noqa: F401
     _GarakApiKeyGetKeyDataset,
     _GarakApiKeyCompleteKeyDataset,
+    _GarakExploitationJinjaDataset,
+    _GarakExploitationSQLiEchoDataset,
+    _GarakExploitationSQLiSystemDataset,
 )
 
 __all__ = [
@@ -110,4 +113,7 @@ __all__ = [
     "_XSTestDataset",
     "_GarakApiKeyGetKeyDataset",
     "_GarakApiKeyCompleteKeyDataset",
+    "_GarakExploitationJinjaDataset",
+    "_GarakExploitationSQLiEchoDataset",
+    "_GarakExploitationSQLiSystemDataset",
 ]

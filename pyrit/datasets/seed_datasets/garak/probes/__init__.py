@@ -34,10 +34,18 @@ Example:
 
 from pyrit.datasets.seed_datasets.garak.probes.apikey import CompleteKey, GetKey
 from pyrit.datasets.seed_datasets.garak.probes.base import Probe, ProbeAttempt
+from pyrit.datasets.seed_datasets.garak.probes.exploitation import (
+    JinjaTemplatePythonInjection,
+    SQLInjectionEcho,
+    SQLInjectionSystem,
+)
 
 __all__ = [
     "Probe",
     "ProbeAttempt",
     "GetKey",
     "CompleteKey",
+    "JinjaTemplatePythonInjection",
+    "SQLInjectionEcho",
+    "SQLInjectionSystem",
 ]
