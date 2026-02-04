@@ -7,6 +7,9 @@ including harm detection, objective completion, and content classification.
 """
 
 from pyrit.score.batch_scorer import BatchScorer
+from pyrit.score.giskard.giskard_harmful_content_detector import GiskardHarmfulContentDetector
+from pyrit.score.giskard.giskard_requirement_evaluator import GiskardRequirementEvaluator
+from pyrit.score.giskard.requirements_based_loader import RequirementsBasedLoader
 from pyrit.score.conversation_scorer import ConversationScorer, create_conversation_scorer
 from pyrit.score.float_scale.azure_content_filter_scorer import AzureContentFilterScorer
 from pyrit.score.float_scale.float_scale_score_aggregator import (
@@ -84,6 +87,8 @@ __all__ = [
     "FloatScaleScorer",
     "FloatScaleThresholdScorer",
     "GandalfScorer",
+    "GiskardHarmfulContentDetector",
+    "GiskardRequirementEvaluator",
     "HarmHumanLabeledEntry",
     "HarmScorerEvaluator",
     "HarmScorerMetrics",
@@ -103,6 +108,7 @@ __all__ = [
     "PromptShieldScorer",
     "QuestionAnswerScorer",
     "RegistryUpdateBehavior",
+    "RequirementsBasedLoader",
     "Scorer",
     "ScorerEvalDatasetFiles",
     "ScorerEvaluator",
